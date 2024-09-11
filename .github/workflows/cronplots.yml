@@ -2,7 +2,8 @@ name: CronPlots
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    #- cron: '*/5 * * * *'
+    - cron: '* * * 13 *'
 
 jobs:
   build:
