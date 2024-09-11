@@ -6,7 +6,7 @@ plot = (ggplot(mtcars, aes("wt", "mpg", color="factor(gear)"))
         + geom_point()
         + stat_smooth(method="lm")
         + facet_wrap("gear")
-        + ggtitle(f"{datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}")
+        + ggtitle(f"{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         )
 
 plot.save(filename="plotnine-save.jpg", format="jpg")
